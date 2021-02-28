@@ -1,7 +1,8 @@
-package linked_list;
+package linked_list.bidirection;
 
-public class ListNode {
+class ListNode {
     int val;
+    ListNode prev;
     ListNode next;
     ListNode(int x) {
         val = x;
