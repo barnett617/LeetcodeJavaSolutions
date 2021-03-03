@@ -1,8 +1,8 @@
 package linked_list.single;
 
-class MyLinkedList {
+public class MyLinkedList {
     int size;
-    ListNode head;
+    public static ListNode head;
     public MyLinkedList() {
         size = 0;
         // sentinel node
