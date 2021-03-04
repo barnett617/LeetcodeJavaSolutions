@@ -8,7 +8,8 @@ import java.util.List;
 import linked_list.single.ListNode;
 
 class Solution {
-    public ListNode reverseLinkedList5(ListNode head) {
+
+    public ListNode reverseLinkedList1(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
         while (curr != null) {
@@ -20,36 +21,12 @@ class Solution {
         return prev;
     }
 
-    public ListNode reverseLinkedList2(ListNode head) {
-        ListNode prev = null;
-        ListNode curr = head;
-        while (curr != null) {
-            ListNode nextTemp = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = nextTemp;
-        }
-        return prev;
-    }
-
-    public ListNode reverseLinkedList3(ListNode head) {
-        ListNode prev = null;
-        ListNode curr = head;
-        while (curr != null) {
-            ListNode nextTemp = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = nextTemp;
-        }
-        return prev;
-    }
-
-    public ListNode reverseLinkedList6(ListNode head) {
+    public ListNode reverseLinkedLis2(ListNode head) {
         if (head == null || head.next == null) return head;
         ListNode p = reverseLinkedList(head.next);
         head.next.next = head;
         head.next = null;
-        return p;
+        return p;  
     }
 
     public ListNode reverseLinkedList(ListNode head) {
@@ -67,16 +44,7 @@ class Solution {
         head = next;
         return reverse(head, newHead);
     }
-
-    public ListNode reverse2(ListNode head, ListNode newHead) {
-        if (head == null) return newHead;
-        ListNode next = head.next;
-        head.next = newHead;
-        newHead = head;
-        head = next;
-        return reverse(head, newHead);
-    }
-}
+ }
 
 public class reverseLinkedList {
     public static void main(String[] args) {
