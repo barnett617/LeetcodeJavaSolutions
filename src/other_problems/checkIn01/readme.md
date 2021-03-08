@@ -7,7 +7,7 @@
 
 ## 解答
 
-![ans](./carbon.svg)
+<img src="./carbon.svg" width="640px" height="auto" />
 
 ## 总结
 
