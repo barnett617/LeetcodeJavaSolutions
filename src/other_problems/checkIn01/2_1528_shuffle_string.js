@@ -4,7 +4,7 @@
  * @param {number[]} indices
  * @return {string}
  */
- var restoreString = function(s, indices) {
+ var restoreString2 = function(s, indices) {
     var arr = s.split('');
     for (var i = 0; i < arr.length; i++) {
         if (indices[i] !== i && arr[i] !== arr[indices[i]]) {
@@ -22,7 +22,13 @@
 // var ans = restoreString("aiohn", [3,1,4,2,0])
 // console.log(ans)
 
-var restoreString2 = function(s, indices) {
+/**
+ * https://leetcode.com/problems/shuffle-string/
+ * @param {string} s
+ * @param {number[]} indices
+ * @return {string}
+ */
+var restoreString = function(s, indices) {
     var arr = s.split('');
     for (var i = 0; i < arr.length; i++) {
         while (indices[i] !== i) {
@@ -41,5 +47,5 @@ var restoreString2 = function(s, indices) {
 // https://leetcode.com/problems/shuffle-string/discuss/755923/Used-Cyclic-Sort-with-O(1)-SPACE-and-O(N)-Time-complexity
 // 在交换元素位置后，将索引数组对应的位置也进行交换，并直至当前索引变为正确的位置
 
-var ans = restoreString2("aiohn", [3,1,4,2,0])
+var ans = restoreString("aiohn", [3,1,4,2,0])
 console.log(ans)

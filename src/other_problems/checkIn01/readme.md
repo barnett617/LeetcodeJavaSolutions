@@ -7,7 +7,7 @@
 
 ## 解答
 
-见目录checkIn01
+![ans](./carbon.svg)
 
 ## 总结
 
