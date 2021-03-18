@@ -1,4 +1,4 @@
-package binary_tree.problem_112;
+package binary_tree.problem112;
 
 import java.util.LinkedList;
 
